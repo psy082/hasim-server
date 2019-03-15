@@ -1,0 +1,28 @@
+<html>
+	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/moonspam/NanumSquare@1.0/nanumsquare.css">
+
+	<style>
+		body{
+			font-family: "NanumSquare", sans-serif;
+		}
+		legend {
+			color: #000099;
+			display: flex;
+		}	
+	</style>
+
+	<head>
+	</head>
+
+	<body>
+		<form accept-charset="utf-8" name = "praying" method="POST">
+			<fieldset style = "width:250">
+				<legend>기도시간</legend>
+					시간 : <input type="number" min="0" max="4" step="1" name="hour">
+					분 : <input type="number" min="0" max="59" step="1" name="minute">
+			</fieldset>
+			<br><br>	
+			<input type = "submit" value="submit"/><br><br>
+		<form>
+	</body>
+</html>
