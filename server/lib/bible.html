@@ -9,6 +9,12 @@
 			color: #000099;
 			display: flex;
 		}	
+		legend .range {
+			flex-direction: column;
+		}
+		legend .verse {
+			flex-direction: row;
+		}
 	</style>
 
 	<head>
@@ -16,10 +22,16 @@
 
 	<body>
 		<form accept-charset="utf-8" name = "praying" method="POST">
-			<fieldset style = "width:250">
-				<legend>기도시간</legend>
-					<input type="number" min="0" max="4" step="1" name="hour"> 시간
-					<input type="number" min="0" max="59" step="1" name="minute"> 분
+			<fieldset style = "width:300">
+				<legend>성경읽기</legend>
+					<div class="range"> 
+						<div class="verse">
+							시작성경 구절 <input type="text" name="start">
+						</div> <br>
+						<div class="verse">
+							마지막성경 구절 <input type="text" name="end">
+						</div>
+					</div>
 			</fieldset>
 			<br><br>	
 			<input type = "submit" value="submit"/><br><br>
