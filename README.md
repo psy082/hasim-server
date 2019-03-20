@@ -11,9 +11,14 @@ Flask는 Python 웹 어플리케이션 표준인 WSGI(Web Server Gateway Interfa
 
 Dependency
 ==================
+│
 
-Flask 1.0.2
-Flask-PyMongo 2.2.0 
-Jinja 2 2.10
-Werkzeug 0.14.1
-pymongo 3.7.2
+├─Flask 1.0.2
+
+├─Flask-PyMongo 2.2.0 
+
+├─Jinja 2 2.10
+
+├─Werkzeug 0.14.1
+
+└─pymongo 3.7.2
