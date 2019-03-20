@@ -8,6 +8,10 @@
 		legend {
 			color: #000099;
 		}	
+		.upper {
+			display: flex;
+			justify-content: space-between;
+		}
 	</style>
 
 	<head>
@@ -17,11 +21,21 @@
 		<form accept-charset="utf-8" name = "praying" method="POST">
 			<fieldset style = "width:300">
 				<legend>일기</legend>
-					<div style="float: right">
-						<select name="public">
-							<option value="true">공개</option>
-							<option value="false">비공개</option>
-						</select><br><br>
+					<div class="upper">
+						<div>
+							<input type="date" id="currentDate"/>
+							
+							<script type="text/javascript">
+								document.getElementById("currentDate").value = new Date().toISOString().substring(0, 10);
+							</script>
+						</div>
+					
+						<div>
+							<select name="public">
+								<option value="true">공개</option>
+								<option value="false">비공개</option>
+							</select><br><br>
+						</div>
 					</div>
 					<textarea name="sermon" cols="60" rows="20" placeholder="오늘 하나님과의 동행을 기록해보세요."></textarea>
 			</fieldset>
